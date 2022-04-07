@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyro Server</title>
+   
+</head>
+
+<body>
+    <div>
+        <h3><span id="today-date"></span> Updated CSV Files</h3>
+        <li><a href="/googleadmob/Google_Admob_All_Data.csv">Admob Latest CSV</a></li>
+        <li><a href="/googleanalytics/Google_Analytics_All_Data.csv">Analytics Latest CSV</a></li>
+        <li><a href="/googleads/Google_Ads_All_Data.csv">Ads Latest CSV</a></li>
+        <li><a href="/facebookads/Facebook_Ads_All_Data.csv">Facebook Latest CSV</a></li>
+        <h3>Search Previous Files By Date:</h3>
+        <form  method = "post" class="flex-box">
+                <div class="col-1">
+                    <input placeholder="Day" type="text" name="day" style="width:80px" id="day">
+                </div>
+                <div class="col-2">
+                    <input placeholder="Month" type="text" name="month" style="width:80px" id="month">
+                </div>
+                <div class="col-3">
+                    <input placeholder="Year" type="text" name="year" style="width:80px" id="year">
+                </div>
+                <div class="col-4">
+                    <input type="radio" id="ads" name="source" value="Google_Ads">
+                      <label for="ads">Google Ads</label>
+                    <input type="radio" id="admob" name="source" value="Google_Admob">
+                      <label for="admob">Google Admob</label>
+                    <input type="radio" id="analytics" name="source" value="Google_Analytics">
+                      <label for="analytics">Google Analytics</label>
+                      <input type="radio" id="facebook" name="source" value="Facebook_Ads">
+                      <label for="facebook">Facebook Ads</label>
+                </div>
+                <div class="col-5">
+                    <input type="submit" name="submit" style="width:80px" id="submit">
+                </div>
+                </form>
+    </div>
+    <script>
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0');
+        var yyyy = today.getFullYear();
+
+        today = dd + '/' + mm + '/' + yyyy;
+        document.getElementById("today-date").innerText = today;
+    </script>
+   
+</body>
+
+</html>
