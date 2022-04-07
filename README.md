@@ -6,7 +6,20 @@
    <h2>This project consist of Datapipeline that collects data from Google Admob, Facebook Ads, Google Analytics and Google Ads into a csv files</h2>
 </div>
 
+## Installation steps
 
+1. Clone the Repo and install the requirements
+
+```
+git clone https://github.com/saadhaxxan/Google-Apps-Revenue-DataPipeline.git
+cd Google-Apps-Revenue-DataPipeline
+pip install -r requirements.txt
+```
+
+2. Fill in the necessary credentials from Facebook and Google in the respective files and run
+```
+python cronjob.py
+```
 
 ## Author
 You can get in touch with me on my LinkedIn Profile:
