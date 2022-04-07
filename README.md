@@ -20,6 +20,10 @@ pip install -r requirements.txt
 ```
 python cronjob.py
 ```
+3. To run the Flask App run
+```
+python wsgi.py
+```
 
 ## Author
 You can get in touch with me on my LinkedIn Profile:
