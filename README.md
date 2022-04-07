@@ -1,5 +1,5 @@
 <div align="center">
-<h1>Google Apps Revenue DataPipeline</h1>
+<h1>Google Apps Revenue Data Pipeline</h1>
    <div align="center">
     <img src="datapipeline.jpeg"/>
   </div>
