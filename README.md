@@ -1,9 +1,5 @@
 <div align="center">
 <h1>Google Apps Revenue Data Pipeline</h1>
-   <div align="center">
-    <img src="datapipeline.jpeg"/>
-  </div>
-   <h2>This project consists of a Data pipeline that collects data from Google Admob, Facebook Ads, Google Analytics, and Google Ads into CSV files.</h2>
 </div>
 
 ## Installation steps
